@@ -1,6 +1,6 @@
 {
-  "version": "1.3.0",
-  "last_updated": "2025-12-11",
+  "version": "1.4.1",
+  "last_updated": "2025-12-12",
   "categories": {
     "technology": {
       "name": "Technology & Engineering",
@@ -3218,7 +3218,10 @@
               "aliases": [
                 "ML",
                 "Machine Learning",
-                "Statistical Learning"
+                "Statistical Learning",
+                "AI",
+                "AI/ML",
+                "Artificial Intelligence"
               ],
               "category": "technology",
               "subcategory": "data_science",
@@ -3286,7 +3289,8 @@
               "industry_demand": "very_high",
               "prerequisites": [
                 "python"
-              ]
+              ],
+              "last_updated": "2025-12-12"
             }
           ]
         },
@@ -4812,6 +4816,82 @@
               ],
               "industry_demand": "very_high",
               "prerequisites": []
+            },
+            {
+              "id": "modern_stack",
+              "canonical_name": "Modern Stack",
+              "aliases": [
+                "Modern Tech Stack",
+                "Cloud-Native Stack",
+                "Contemporary Stack",
+                "Latest Technologies"
+              ],
+              "category": "technology",
+              "subcategory": "architecture",
+              "tags": [
+                "architecture",
+                "cloud",
+                "modern",
+                "best-practices"
+              ],
+              "description": "Experience with modern, cloud-native technology stacks (React/Vue, Node.js/Python, PostgreSQL/MongoDB, AWS/GCP, Docker/Kubernetes)",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "cloud_architecture",
+                "microservices_architecture"
+              ],
+              "transferability": {
+                "cloud_architecture": 0.85,
+                "microservices_architecture": 0.75
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Used modern frameworks (React, Vue)",
+                    "Cloud deployment experience",
+                    "REST APIs",
+                    "Basic containerization"
+                  ],
+                  "typical_experience": "0-2 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Full-stack with modern stack",
+                    "Microservices architecture",
+                    "CI/CD pipelines",
+                    "Cloud-native patterns"
+                  ],
+                  "typical_experience": "2-5 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Architected modern systems",
+                    "Multi-cloud experience",
+                    "Performance optimization",
+                    "Infrastructure as Code"
+                  ],
+                  "typical_experience": "5-8 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Technology strategy",
+                    "Stack selection and evolution",
+                    "Thought leadership on modern architecture",
+                    "Built platforms used by many teams"
+                  ],
+                  "typical_experience": "8+ years"
+                }
+              },
+              "typical_roles": [
+                "Full Stack Engineer",
+                "Solutions Architect",
+                "CTO",
+                "Tech Lead"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": [],
+              "last_updated": "2025-12-12"
             }
           ]
         },
@@ -7388,6 +7468,252 @@
               ],
               "industry_demand": "very_high",
               "prerequisites": []
+            },
+            {
+              "id": "technical_leadership",
+              "canonical_name": "Technical Leadership",
+              "aliases": [
+                "Tech Leadership",
+                "Engineering Leadership",
+                "Technical Direction",
+                "CTO",
+                "VP of Engineering"
+              ],
+              "category": "business",
+              "subcategory": "management",
+              "tags": [
+                "leadership",
+                "management",
+                "technical",
+                "executive",
+                "architecture"
+              ],
+              "description": "Leading technical teams and driving technology strategy and architecture decisions",
+              "parent_skills": [
+                "team_leadership"
+              ],
+              "child_skills": [],
+              "related_skills": [
+                "product_management",
+                "business_strategy"
+              ],
+              "transferability": {
+                "team_leadership": 0.85,
+                "product_management": 0.7,
+                "business_strategy": 0.65
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Led small technical projects",
+                    "Made architectural decisions for features",
+                    "Mentored junior developers",
+                    "Technical design reviews"
+                  ],
+                  "typical_experience": "0-3 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Tech lead for product/team",
+                    "Architecture decisions for modules",
+                    "Technical hiring",
+                    "Cross-functional collaboration"
+                  ],
+                  "typical_experience": "3-7 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Engineering Manager or Staff/Principal Engineer",
+                    "System-wide architecture",
+                    "Built technical team culture",
+                    "Technology strategy input"
+                  ],
+                  "typical_experience": "7-12 years"
+                },
+                "expert": {
+                  "markers": [
+                    "CTO, VP Engineering, or Distinguished Engineer",
+                    "Company-wide technical strategy",
+                    "Built/scaled engineering organizations",
+                    "Industry thought leadership"
+                  ],
+                  "typical_experience": "12+ years"
+                }
+              },
+              "typical_roles": [
+                "Engineering Manager",
+                "Tech Lead",
+                "VP of Engineering",
+                "CTO",
+                "Staff/Principal Engineer"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": [
+                "team_leadership"
+              ],
+              "last_updated": "2025-12-12"
+            },
+            {
+              "id": "team_building",
+              "canonical_name": "Team Building",
+              "aliases": [
+                "Team Scaling",
+                "Hiring",
+                "Talent Acquisition",
+                "Building Teams",
+                "Team Growth"
+              ],
+              "category": "business",
+              "subcategory": "management",
+              "tags": [
+                "leadership",
+                "hiring",
+                "recruitment",
+                "culture",
+                "scaling"
+              ],
+              "description": "Building, hiring, and scaling teams from 0 to N, creating team culture and processes",
+              "parent_skills": [
+                "team_leadership"
+              ],
+              "child_skills": [],
+              "related_skills": [
+                "technical_leadership"
+              ],
+              "transferability": {
+                "team_leadership": 0.9,
+                "technical_leadership": 0.75
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Participated in hiring",
+                    "Conducted interviews",
+                    "Onboarded new team members",
+                    "Team building activities"
+                  ],
+                  "typical_experience": "0-2 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Owned hiring process",
+                    "Grew team from 5 to 15",
+                    "Defined team culture",
+                    "Designed onboarding"
+                  ],
+                  "typical_experience": "2-5 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Built teams from 0 to 20+",
+                    "Hired for multiple roles/levels",
+                    "Created hiring playbooks",
+                    "Cross-functional team building"
+                  ],
+                  "typical_experience": "5-10 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Scaled organizations 0 to 100+",
+                    "Built distributed global teams",
+                    "Created scalable hiring systems",
+                    "Organizational design"
+                  ],
+                  "typical_experience": "10+ years"
+                }
+              },
+              "typical_roles": [
+                "Engineering Manager",
+                "Director",
+                "VP",
+                "Head of Talent",
+                "Founder"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": [],
+              "last_updated": "2025-12-12"
+            },
+            {
+              "id": "remote_async_work",
+              "canonical_name": "Remote/Async Work",
+              "aliases": [
+                "Remote Work",
+                "Distributed Teams",
+                "Async Communication",
+                "Remote-First",
+                "Asynchronous Collaboration"
+              ],
+              "category": "business",
+              "subcategory": "management",
+              "tags": [
+                "remote",
+                "distributed",
+                "async",
+                "communication",
+                "collaboration"
+              ],
+              "description": "Working effectively in remote and asynchronous environments, managing distributed teams across timezones",
+              "parent_skills": [
+                "team_leadership"
+              ],
+              "child_skills": [],
+              "related_skills": [
+                "technical_leadership",
+                "team_building"
+              ],
+              "transferability": {
+                "team_leadership": 0.75,
+                "technical_leadership": 0.7,
+                "team_building": 0.65
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Worked remotely",
+                    "Used async tools (Slack, email)",
+                    "Participated in remote meetings",
+                    "Basic remote collaboration"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "2+ years remote work",
+                    "Async-first communication",
+                    "Worked across timezones",
+                    "Remote collaboration best practices"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Managed distributed teams",
+                    "Built remote culture",
+                    "Async decision-making",
+                    "Timezone-aware processes"
+                  ],
+                  "typical_experience": "3-7 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Built remote-first organizations",
+                    "Global distributed teams 10+ timezones",
+                    "Remote work thought leadership",
+                    "Designed async-first systems"
+                  ],
+                  "typical_experience": "7+ years"
+                }
+              },
+              "typical_roles": [
+                "Remote Engineer",
+                "Engineering Manager",
+                "Head of Remote",
+                "Distributed Team Lead",
+                "Fractional CTO"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": [],
+              "last_updated": "2025-12-12"
             }
           ]
         },
@@ -7529,6 +7855,87 @@
               ],
               "industry_demand": "very_high",
               "prerequisites": []
+            },
+            {
+              "id": "startup_experience",
+              "canonical_name": "Startup Experience",
+              "aliases": [
+                "Startups",
+                "Early Stage",
+                "Seed to Series B",
+                "High Growth",
+                "0-1 Building"
+              ],
+              "category": "business",
+              "subcategory": "domain_knowledge",
+              "tags": [
+                "startup",
+                "entrepreneurship",
+                "high-growth",
+                "early-stage",
+                "innovation"
+              ],
+              "description": "Experience working in startup environments (seed to Series B), dealing with ambiguity, rapid change, and resource constraints",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "product_management",
+                "business_strategy",
+                "team_building"
+              ],
+              "transferability": {
+                "product_management": 0.7,
+                "business_strategy": 0.65,
+                "team_building": 0.6
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Joined startup pre-Series A",
+                    "Wore multiple hats",
+                    "Worked in ambiguous environment",
+                    "Direct founder collaboration"
+                  ],
+                  "typical_experience": "0-2 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "2+ startups or 3+ years startup experience",
+                    "Saw 0-1 or growth phases",
+                    "Built features without specs",
+                    "Understood startup metrics"
+                  ],
+                  "typical_experience": "2-5 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Multiple startups through exits/fundraising",
+                    "Led teams in startup environment",
+                    "Startup through scale-up transition",
+                    "Fundraising involvement"
+                  ],
+                  "typical_experience": "5-10 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Founded or co-founded startups",
+                    "Multiple exits or unicorns",
+                    "Fractional executive for startups",
+                    "Startup advisor/investor"
+                  ],
+                  "typical_experience": "10+ years"
+                }
+              },
+              "typical_roles": [
+                "Startup Engineer",
+                "Head of Engineering",
+                "Founder",
+                "Early Employee",
+                "Fractional CTO"
+              ],
+              "industry_demand": "high",
+              "prerequisites": [],
+              "last_updated": "2025-12-12"
             }
           ]
         }
