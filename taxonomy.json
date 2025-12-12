@@ -1,5 +1,5 @@
 {
-  "version": "1.4.2",
+  "version": "1.4.1",
   "last_updated": "2025-12-12",
   "categories": {
     "technology": {
@@ -3221,11 +3221,7 @@
                 "Statistical Learning",
                 "AI",
                 "AI/ML",
-                "Artificial Intelligence",
-                "AI/ML Integration",
-                "AI/ML Platforms",
-                "AI for Engineering Productivity",
-                "AI-Driven Healthcare Platforms"
+                "Artificial Intelligence"
               ],
               "category": "technology",
               "subcategory": "data_science",
@@ -6646,10 +6642,7 @@
               "aliases": [
                 "Strategic Planning",
                 "Corporate Strategy",
-                "Strategy",
-                "Technology Strategy",
-                "Technology Strategy & Roadmaps",
-                "Go-to-Market Strategy"
+                "Strategy"
               ],
               "category": "business",
               "subcategory": "strategy",
@@ -6711,8 +6704,7 @@
                 "Chief Strategy Officer"
               ],
               "industry_demand": "high",
-              "prerequisites": [],
-              "last_updated": "2025-12-12"
+              "prerequisites": []
             }
           ]
         },
@@ -7114,10 +7106,7 @@
               "aliases": [
                 "PM",
                 "Product",
-                "Product Strategy",
-                "Product Leadership",
-                "Product Development",
-                "Product Development Lifecycle"
+                "Product Strategy"
               ],
               "category": "business",
               "subcategory": "product_management",
@@ -7182,8 +7171,7 @@
                 "Chief Product Officer"
               ],
               "industry_demand": "very_high",
-              "prerequisites": [],
-              "last_updated": "2025-12-12"
+              "prerequisites": []
             },
             {
               "id": "product_owner",
@@ -7417,10 +7405,7 @@
               "aliases": [
                 "Leadership",
                 "Team Management",
-                "People Management",
-                "Engineering Management",
-                "Engineering Leader",
-                "People Leadership"
+                "People Management"
               ],
               "category": "business",
               "subcategory": "management",
@@ -7482,8 +7467,7 @@
                 "VP"
               ],
               "industry_demand": "very_high",
-              "prerequisites": [],
-              "last_updated": "2025-12-12"
+              "prerequisites": []
             },
             {
               "id": "technical_leadership",
@@ -7493,10 +7477,7 @@
                 "Engineering Leadership",
                 "Technical Direction",
                 "CTO",
-                "VP of Engineering",
-                "Tech Lead",
-                "Technical Lead",
-                "Technology Leadership"
+                "VP of Engineering"
               ],
               "category": "business",
               "subcategory": "management",
@@ -7580,10 +7561,7 @@
                 "Hiring",
                 "Talent Acquisition",
                 "Building Teams",
-                "Team Growth",
-                "Engineering Team Building",
-                "Engineering Team Building & Scaling",
-                "Building & Scaling Teams"
+                "Team Growth"
               ],
               "category": "business",
               "subcategory": "management",
@@ -7663,10 +7641,7 @@
                 "Distributed Teams",
                 "Async Communication",
                 "Remote-First",
-                "Asynchronous Collaboration",
-                "International Team Management",
-                "Distributed Team Management",
-                "Global Teams"
+                "Asynchronous Collaboration"
               ],
               "category": "business",
               "subcategory": "management",
@@ -7889,9 +7864,7 @@
                 "Early Stage",
                 "Seed to Series B",
                 "High Growth",
-                "0-1 Building",
-                "Fundraising",
-                "Fundraising & Investor Relations"
+                "0-1 Building"
               ],
               "category": "business",
               "subcategory": "domain_knowledge",
