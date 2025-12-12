@@ -1,6 +1,6 @@
 {
-  "version": "1.4.4",
-  "last_updated": "2025-12-12",
+  "version": "1.4.5",
+  "last_updated": "2025-12-13",
   "categories": {
     "technology": {
       "name": "Technology & Engineering",
@@ -3223,7 +3223,8 @@
                 "AI/ML",
                 "Artificial Intelligence",
                 "AI/ML Integration",
-                "AI/ML Platforms"
+                "AI/ML Platforms",
+                "AI for Engineering Productivity"
               ],
               "category": "technology",
               "subcategory": "data_science",
@@ -3292,7 +3293,7 @@
               "prerequisites": [
                 "python"
               ],
-              "last_updated": "2025-12-12"
+              "last_updated": "2025-12-13"
             }
           ]
         },
@@ -7415,7 +7416,8 @@
               "aliases": [
                 "Leadership",
                 "Team Management",
-                "People Management"
+                "People Management",
+                "Engineering Management"
               ],
               "category": "business",
               "subcategory": "management",
@@ -7477,7 +7479,8 @@
                 "VP"
               ],
               "industry_demand": "very_high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "technical_leadership",
