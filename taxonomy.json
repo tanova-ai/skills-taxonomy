@@ -1,5 +1,5 @@
 {
-  "version": "1.4.6",
+  "version": "1.4.7",
   "last_updated": "2025-12-13",
   "categories": {
     "technology": {
@@ -206,7 +206,9 @@
                 "javascript"
               ],
               "transferability": {
-                "javascript": 0.6
+                "javascript": 0.6,
+                "nodejs": 0.65,
+                "java": 0.7
               },
               "proficiency_levels": {
                 "beginner": {
@@ -257,7 +259,8 @@
                 "DevOps Engineer"
               ],
               "industry_demand": "very_high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "java",
@@ -282,7 +285,10 @@
                 "spring"
               ],
               "related_skills": [],
-              "transferability": {},
+              "transferability": {
+                "nodejs": 0.55,
+                "python": 0.7
+              },
               "proficiency_levels": {
                 "beginner": {
                   "markers": [
@@ -331,7 +337,8 @@
                 "Enterprise Architect"
               ],
               "industry_demand": "high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "go",
@@ -2702,7 +2709,10 @@
               "parent_skills": [],
               "child_skills": [],
               "related_skills": [],
-              "transferability": {},
+              "transferability": {
+                "mysql": 0.9,
+                "mongodb": 0.5
+              },
               "proficiency_levels": {
                 "beginner": {
                   "markers": [
@@ -2750,7 +2760,8 @@
                 "Data Engineer"
               ],
               "industry_demand": "very_high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "mongodb",
@@ -3475,7 +3486,10 @@
               "parent_skills": [],
               "child_skills": [],
               "related_skills": [],
-              "transferability": {},
+              "transferability": {
+                "gcp": 0.85,
+                "azure": 0.85
+              },
               "proficiency_levels": {
                 "beginner": {
                   "markers": [
@@ -3523,7 +3537,8 @@
                 "Solutions Architect"
               ],
               "industry_demand": "very_high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "git",
