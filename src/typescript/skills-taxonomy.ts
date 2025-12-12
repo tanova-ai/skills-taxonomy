@@ -4,7 +4,7 @@
  * A comprehensive, machine-readable skills taxonomy for AI-powered recruitment and HR tech.
  *
  * Created and maintained by Tanova.ai - https://tanova.ai
- * License: MIT
+ * License: CC BY 4.0
  *
  * @example
  * ```typescript
