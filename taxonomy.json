@@ -1,5 +1,5 @@
 {
-  "version": "1.4.7",
+  "version": "1.4.8",
   "last_updated": "2025-12-13",
   "categories": {
     "technology": {
@@ -206,9 +206,7 @@
                 "javascript"
               ],
               "transferability": {
-                "javascript": 0.6,
-                "nodejs": 0.65,
-                "java": 0.7
+                "javascript": 0.6
               },
               "proficiency_levels": {
                 "beginner": {
@@ -286,7 +284,6 @@
               ],
               "related_skills": [],
               "transferability": {
-                "nodejs": 0.55,
                 "python": 0.7
               },
               "proficiency_levels": {
@@ -2709,10 +2706,7 @@
               "parent_skills": [],
               "child_skills": [],
               "related_skills": [],
-              "transferability": {
-                "mysql": 0.9,
-                "mongodb": 0.5
-              },
+              "transferability": {},
               "proficiency_levels": {
                 "beginner": {
                   "markers": [
@@ -3486,10 +3480,7 @@
               "parent_skills": [],
               "child_skills": [],
               "related_skills": [],
-              "transferability": {
-                "gcp": 0.85,
-                "azure": 0.85
-              },
+              "transferability": {},
               "proficiency_levels": {
                 "beginner": {
                   "markers": [
