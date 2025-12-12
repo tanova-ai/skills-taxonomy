@@ -1,0 +1,394 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://tanova.ai/schemas/skill.schema.json",
+  "title": "Tanova Skills Taxonomy - Skill Schema",
+  "description": "JSON Schema for validating skill definitions in the Tanova Skills Taxonomy",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["id", "canonical_name", "aliases", "category", "subcategory", "description", "proficiency_levels", "typical_roles", "industry_demand"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the skill (lowercase, underscore-separated)",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "examples": ["javascript", "react", "machine_learning"]
+    },
+    "canonical_name": {
+      "type": "string",
+      "description": "Official name of the skill (properly capitalized)",
+      "minLength": 1,
+      "examples": ["JavaScript", "React", "Machine Learning"]
+    },
+    "aliases": {
+      "type": "array",
+      "description": "Common variations and alternative names for this skill",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "examples": [
+        ["JS", "Javascript", "ECMAScript"],
+        ["React.js", "ReactJS", "React Framework"]
+      ]
+    },
+    "category": {
+      "type": "string",
+      "description": "Top-level category for this skill",
+      "enum": [
+        "technology",
+        "business",
+        "creative",
+        "healthcare",
+        "operations",
+        "education"
+      ]
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Subcategory within the main category",
+      "examples": [
+        "programming_languages",
+        "frontend_development",
+        "backend_development",
+        "sales",
+        "marketing"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "description": "Searchable tags for categorization and filtering",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "examples": [
+        ["javascript", "frontend", "web"],
+        ["sales", "b2b", "enterprise"]
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of what this skill is",
+      "minLength": 10,
+      "maxLength": 500,
+      "examples": [
+        "JavaScript library for building user interfaces",
+        "Selling products or services to other businesses"
+      ]
+    },
+    "parent_skills": {
+      "type": "array",
+      "description": "Skills that are prerequisites or broader than this skill",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true,
+      "examples": [
+        ["javascript", "html", "css"],
+        ["python"]
+      ]
+    },
+    "child_skills": {
+      "type": "array",
+      "description": "More specific skills that build upon this skill",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true,
+      "examples": [
+        ["react_hooks", "react_router", "redux"],
+        ["django", "flask"]
+      ]
+    },
+    "related_skills": {
+      "type": "array",
+      "description": "Skills in the same domain that often appear together",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true,
+      "examples": [
+        ["vue", "angular", "svelte"],
+        ["python", "go", "java"]
+      ]
+    },
+    "transferability": {
+      "type": "object",
+      "description": "Scores (0-1) indicating how easily this skill transfers to related skills",
+      "patternProperties": {
+        "^[a-z][a-z0-9_]*$": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "examples": [0.85, 0.60, 0.95]
+        }
+      },
+      "additionalProperties": false,
+      "examples": [
+        {
+          "vue": 0.85,
+          "angular": 0.75,
+          "svelte": 0.80
+        }
+      ]
+    },
+    "proficiency_levels": {
+      "type": "object",
+      "description": "Proficiency level definitions with markers and typical experience",
+      "required": ["beginner", "intermediate", "advanced", "expert"],
+      "properties": {
+        "beginner": {
+          "$ref": "#/definitions/proficiency_level"
+        },
+        "intermediate": {
+          "$ref": "#/definitions/proficiency_level"
+        },
+        "advanced": {
+          "$ref": "#/definitions/proficiency_level"
+        },
+        "expert": {
+          "$ref": "#/definitions/proficiency_level"
+        }
+      },
+      "additionalProperties": false
+    },
+    "typical_roles": {
+      "type": "array",
+      "description": "Job roles that commonly require this skill",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "examples": [
+        ["Frontend Engineer", "Full Stack Developer", "React Developer"],
+        ["Sales Executive", "Account Executive", "VP of Sales"]
+      ]
+    },
+    "industry_demand": {
+      "type": "string",
+      "description": "Current market demand level for this skill",
+      "enum": [
+        "very_high",
+        "high",
+        "medium",
+        "low",
+        "declining"
+      ]
+    },
+    "prerequisites": {
+      "type": "array",
+      "description": "Skills that should typically be learned before this one",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true,
+      "examples": [
+        ["javascript", "html", "css"],
+        []
+      ]
+    },
+    "certifications": {
+      "type": "array",
+      "description": "Common certifications related to this skill",
+      "items": {
+        "type": "object",
+        "required": ["name", "provider"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the certification",
+            "examples": ["AWS Certified Solutions Architect", "CKA"]
+          },
+          "provider": {
+            "type": "string",
+            "description": "Organization providing the certification",
+            "examples": ["Amazon Web Services", "Cloud Native Computing Foundation"]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to certification information"
+          }
+        }
+      }
+    },
+    "learning_resources": {
+      "type": "array",
+      "description": "Recommended resources for learning this skill",
+      "items": {
+        "type": "object",
+        "required": ["title", "type"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Name of the resource"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["course", "book", "documentation", "video", "tutorial", "bootcamp"],
+            "description": "Type of learning resource"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to the resource"
+          },
+          "cost": {
+            "type": "string",
+            "enum": ["free", "paid", "freemium"],
+            "description": "Cost model for the resource"
+          }
+        }
+      }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when this skill definition was last updated (YYYY-MM-DD)",
+      "examples": ["2025-12-11"]
+    },
+    "deprecated": {
+      "type": "boolean",
+      "description": "Whether this skill is deprecated or outdated",
+      "default": false
+    },
+    "replacement_skills": {
+      "type": "array",
+      "description": "Skills that have replaced this deprecated skill",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true,
+      "examples": [
+        ["react", "vue"],
+        ["typescript"]
+      ]
+    }
+  },
+  "definitions": {
+    "proficiency_level": {
+      "type": "object",
+      "description": "Definition of a proficiency level for a skill",
+      "required": ["markers", "typical_experience"],
+      "properties": {
+        "markers": {
+          "type": "array",
+          "description": "Observable indicators of this proficiency level",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          },
+          "minItems": 2,
+          "uniqueItems": true,
+          "examples": [
+            [
+              "Built simple components",
+              "Followed tutorials",
+              "Used create-react-app"
+            ],
+            [
+              "Managed state with Redux",
+              "Built production apps",
+              "Component lifecycle understanding"
+            ]
+          ]
+        },
+        "typical_experience": {
+          "type": "string",
+          "description": "Typical years of experience at this level",
+          "pattern": "^[0-9]+-?[0-9]* years?$",
+          "examples": [
+            "0-1 years",
+            "1-3 years",
+            "3-5 years",
+            "5+ years",
+            "10+ years"
+          ]
+        },
+        "example_projects": {
+          "type": "array",
+          "description": "Example projects typical at this proficiency level",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "examples": [
+            ["Built a todo app with React", "Created a personal portfolio website"],
+            ["Built a SaaS product with 10K+ users", "Contributed to open source framework"]
+          ]
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "react",
+      "canonical_name": "React",
+      "aliases": ["React.js", "ReactJS", "React Framework"],
+      "category": "technology",
+      "subcategory": "frontend_development",
+      "tags": ["javascript", "framework", "ui", "web"],
+      "description": "JavaScript library for building user interfaces",
+      "parent_skills": ["javascript", "frontend_development"],
+      "child_skills": ["react_hooks", "react_router", "redux"],
+      "related_skills": ["vue", "angular", "svelte"],
+      "transferability": {
+        "vue": 0.85,
+        "angular": 0.75,
+        "svelte": 0.80
+      },
+      "proficiency_levels": {
+        "beginner": {
+          "markers": [
+            "Built simple components",
+            "Followed tutorials",
+            "Used create-react-app"
+          ],
+          "typical_experience": "0-1 years"
+        },
+        "intermediate": {
+          "markers": [
+            "Managed state with Redux",
+            "Built production apps",
+            "Component lifecycle understanding"
+          ],
+          "typical_experience": "1-3 years"
+        },
+        "advanced": {
+          "markers": [
+            "Performance optimization",
+            "Custom hooks",
+            "Testing strategies"
+          ],
+          "typical_experience": "3-5 years"
+        },
+        "expert": {
+          "markers": [
+            "React internals knowledge",
+            "Contributed to React ecosystem",
+            "Architected large-scale apps"
+          ],
+          "typical_experience": "5+ years"
+        }
+      },
+      "typical_roles": [
+        "Frontend Engineer",
+        "Full Stack Developer",
+        "React Developer"
+      ],
+      "industry_demand": "very_high",
+      "prerequisites": ["javascript", "html", "css"],
+      "last_updated": "2025-12-11"
+    }
+  ]
+}
