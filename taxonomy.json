@@ -1,5 +1,5 @@
 {
-  "version": "1.4.1",
+  "version": "1.4.3",
   "last_updated": "2025-12-12",
   "categories": {
     "technology": {
@@ -3221,7 +3221,9 @@
                 "Statistical Learning",
                 "AI",
                 "AI/ML",
-                "Artificial Intelligence"
+                "Artificial Intelligence",
+                "AI/ML Integration",
+                "AI/ML Platforms"
               ],
               "category": "technology",
               "subcategory": "data_science",
@@ -6642,7 +6644,8 @@
               "aliases": [
                 "Strategic Planning",
                 "Corporate Strategy",
-                "Strategy"
+                "Strategy",
+                "Technology Strategy"
               ],
               "category": "business",
               "subcategory": "strategy",
@@ -6704,7 +6707,8 @@
                 "Chief Strategy Officer"
               ],
               "industry_demand": "high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-12"
             }
           ]
         },
@@ -7106,7 +7110,8 @@
               "aliases": [
                 "PM",
                 "Product",
-                "Product Strategy"
+                "Product Strategy",
+                "Product Development"
               ],
               "category": "business",
               "subcategory": "product_management",
@@ -7171,7 +7176,8 @@
                 "Chief Product Officer"
               ],
               "industry_demand": "very_high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-12"
             },
             {
               "id": "product_owner",
@@ -7561,7 +7567,8 @@
                 "Hiring",
                 "Talent Acquisition",
                 "Building Teams",
-                "Team Growth"
+                "Team Growth",
+                "Engineering Team Building"
               ],
               "category": "business",
               "subcategory": "management",
