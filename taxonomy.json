@@ -1,5 +1,5 @@
 {
-  "version": "1.4.5",
+  "version": "1.4.6",
   "last_updated": "2025-12-13",
   "categories": {
     "technology": {
@@ -1674,7 +1674,8 @@
               ],
               "transferability": {
                 "vue": 0.85,
-                "angular": 0.75
+                "angular": 0.75,
+                "modern_stack": 0.8
               },
               "proficiency_levels": {
                 "beginner": {
@@ -1728,7 +1729,8 @@
                 "javascript",
                 "html",
                 "css"
-              ]
+              ],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "vue",
@@ -1759,7 +1761,8 @@
               ],
               "transferability": {
                 "react": 0.85,
-                "angular": 0.7
+                "angular": 0.7,
+                "modern_stack": 0.8
               },
               "proficiency_levels": {
                 "beginner": {
@@ -1812,7 +1815,8 @@
                 "javascript",
                 "html",
                 "css"
-              ]
+              ],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "angular",
@@ -2321,7 +2325,8 @@
               "transferability": {
                 "python": 0.65,
                 "go": 0.6,
-                "java": 0.55
+                "java": 0.55,
+                "modern_stack": 0.75
               },
               "proficiency_levels": {
                 "beginner": {
@@ -2372,7 +2377,8 @@
               "industry_demand": "very_high",
               "prerequisites": [
                 "javascript"
-              ]
+              ],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "django",
@@ -5822,7 +5828,8 @@
                 "python"
               ],
               "transferability": {
-                "python": 0.6
+                "python": 0.6,
+                "machine_learning": 0.85
               },
               "proficiency_levels": {
                 "beginner": {
@@ -5870,7 +5877,8 @@
               "industry_demand": "very_high",
               "prerequisites": [
                 "python"
-              ]
+              ],
+              "last_updated": "2025-12-13"
             },
             {
               "id": "langchain",
@@ -5967,7 +5975,9 @@
               "related_skills": [
                 "python"
               ],
-              "transferability": {},
+              "transferability": {
+                "machine_learning": 0.9
+              },
               "proficiency_levels": {
                 "beginner": {
                   "markers": [
@@ -6014,7 +6024,8 @@
               "industry_demand": "very_high",
               "prerequisites": [
                 "python"
-              ]
+              ],
+              "last_updated": "2025-12-13"
             }
           ]
         },
