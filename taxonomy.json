@@ -1,5 +1,5 @@
 {
-  "version": "1.4.3",
+  "version": "1.4.4",
   "last_updated": "2025-12-12",
   "categories": {
     "technology": {
@@ -5520,7 +5520,8 @@
               ],
               "transferability": {
                 "distributed_systems": 0.75,
-                "event_driven_architecture": 0.7
+                "event_driven_architecture": 0.7,
+                "modern_stack": 0.75
               },
               "proficiency_levels": {
                 "beginner": {
@@ -5566,7 +5567,8 @@
                 "Staff Engineer"
               ],
               "industry_demand": "very_high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-12"
             },
             {
               "id": "event_driven_architecture",
@@ -5667,7 +5669,8 @@
                 "distributed_systems"
               ],
               "transferability": {
-                "distributed_systems": 0.75
+                "distributed_systems": 0.75,
+                "modern_stack": 0.85
               },
               "proficiency_levels": {
                 "beginner": {
@@ -5713,7 +5716,8 @@
                 "Platform Engineer"
               ],
               "industry_demand": "very_high",
-              "prerequisites": []
+              "prerequisites": [],
+              "last_updated": "2025-12-12"
             }
           ]
         },
