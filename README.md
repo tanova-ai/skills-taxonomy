@@ -391,8 +391,31 @@ Get parent skills in hierarchy.
 #### `getChildren(skillId: string): Skill[]`
 Get child/sub-skills.
 
-#### `getRelated(skillId: string): Skill[]`
+#### `getRelated(skillId: string, options?: { includeTransferable?: boolean, minTransferability?: number, namesOnly?: boolean }): Skill[] | string[]`
 Get related skills (same domain, transferable).
+
+**Options:**
+- `includeTransferable` - Include skills with high transferability (default: `false`)
+- `minTransferability` - Minimum transferability score when `includeTransferable` is true (default: `0.8`)
+- `namesOnly` - Return skill names instead of full objects (default: `false`)
+
+**Examples:**
+```typescript
+// Get explicitly related skills only (backward compatible)
+taxonomy.getRelated('React')
+// Returns: [{ id: 'vue', canonical_name: 'Vue.js', ... }, { id: 'angular', canonical_name: 'Angular', ... }]
+
+// Include highly transferable skills (80%+)
+taxonomy.getRelated('React', { includeTransferable: true })
+// Returns: [...related skills + highly transferable skills]
+
+// Include skills with lower transferability threshold (70%+)
+taxonomy.getRelated('React', { includeTransferable: true, minTransferability: 0.7 })
+
+// Get just skill names
+taxonomy.getRelated('React', { namesOnly: true, includeTransferable: true })
+// Returns: ['Vue.js', 'Angular', 'Svelte', ...]
+```
 
 #### `areRelated(skill1: string, skill2: string): boolean`
 Check if two skills are related.

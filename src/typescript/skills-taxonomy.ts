@@ -248,18 +248,69 @@ export class SkillsTaxonomy {
    * Get related skills (same domain, transferable).
    *
    * @param skillName - Name or alias of the skill
-   * @returns Array of related Skill objects
+   * @param options - Configuration options
+   * @param options.includeTransferable - Include skills with high transferability (default: false)
+   * @param options.minTransferability - Minimum transferability score when includeTransferable is true (default: 0.8)
+   * @param options.namesOnly - Return skill names instead of full objects (default: false)
+   * @returns Array of related Skill objects or skill names
+   *
+   * @example
+   * // Get explicitly related skills only
+   * taxonomy.getRelated("React")
+   *
+   * @example
+   * // Include highly transferable skills (80%+)
+   * taxonomy.getRelated("React", { includeTransferable: true })
+   *
+   * @example
+   * // Include transferable skills with custom threshold
+   * taxonomy.getRelated("React", { includeTransferable: true, minTransferability: 0.7 })
+   *
+   * @example
+   * // Get just skill names instead of full objects
+   * taxonomy.getRelated("React", { namesOnly: true })
    */
-  getRelated(skillName: string): Skill[] {
+  getRelated(
+    skillName: string,
+    options?: {
+      includeTransferable?: boolean
+      minTransferability?: number
+      namesOnly?: boolean
+    }
+  ): Skill[] | string[] {
     const skill = this.findSkill(skillName)
     if (!skill) return []
 
-    const related: Skill[] = []
+    const relatedSet = new Set<string>()
+
+    // Add explicitly defined related skills
     for (const relatedId of skill.related_skills) {
-      const relatedSkill = this.skills.get(relatedId)
-      if (relatedSkill) related.push(relatedSkill)
+      relatedSet.add(relatedId)
     }
-    return related
+
+    // Optionally add skills with high transferability
+    if (options?.includeTransferable && skill.transferability) {
+      const minScore = options.minTransferability ?? 0.8
+      for (const [targetSkillId, score] of Object.entries(skill.transferability)) {
+        if (score >= minScore) {
+          relatedSet.add(targetSkillId)
+        }
+      }
+    }
+
+    // Convert IDs to Skill objects
+    const relatedSkills: Skill[] = []
+    for (const id of relatedSet) {
+      const relatedSkill = this.skills.get(id)
+      if (relatedSkill) relatedSkills.push(relatedSkill)
+    }
+
+    // Return names only if requested
+    if (options?.namesOnly) {
+      return relatedSkills.map(s => s.canonical_name)
+    }
+
+    return relatedSkills
   }
 
   /**

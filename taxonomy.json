@@ -1,6 +1,6 @@
 {
-  "version": "1.4.8",
-  "last_updated": "2025-12-13",
+  "version": "1.4.11",
+  "last_updated": "2025-12-28",
   "categories": {
     "technology": {
       "name": "Technology & Engineering",
@@ -2292,6 +2292,82 @@
                 "javascript",
                 "html"
               ]
+            },
+            {
+              "id": "nuxtjs",
+              "canonical_name": "Nuxt.js",
+              "aliases": [
+                "Nuxt",
+                "NuxtJS",
+                "Nuxt.js"
+              ],
+              "category": "technology",
+              "subcategory": "frontend_development",
+              "tags": [
+                "frontend",
+                "web",
+                "ssr",
+                "vue"
+              ],
+              "description": "Vue.js meta-framework for server-side rendering and static site generation",
+              "parent_skills": [
+                "vue"
+              ],
+              "child_skills": [],
+              "related_skills": [
+                "vue",
+                "nextjs",
+                "react"
+              ],
+              "transferability": {
+                "vue": 0.95,
+                "nextjs": 0.85,
+                "react": 0.7
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Built basic Nuxt apps",
+                    "Used Nuxt routing",
+                    "Worked with SSR"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Built production Nuxt apps",
+                    "Configured Nuxt modules",
+                    "Optimized performance"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Architected large Nuxt applications",
+                    "Custom Nuxt modules",
+                    "Advanced SSR patterns"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Contributed to Nuxt ecosystem",
+                    "Nuxt conference speaker",
+                    "Created popular Nuxt plugins"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "Frontend Developer",
+                "Full Stack Developer",
+                "Vue.js Developer"
+              ],
+              "industry_demand": "high",
+              "prerequisites": [
+                "javascript",
+                "vue"
+              ]
             }
           ]
         },
@@ -2676,6 +2752,149 @@
               "typical_roles": [
                 "Backend Developer",
                 "API Developer",
+                "Full Stack Developer"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": []
+            },
+            {
+              "id": "api_design",
+              "canonical_name": "API Design",
+              "aliases": [
+                "REST API",
+                "API Development",
+                "RESTful APIs",
+                "API Architecture"
+              ],
+              "category": "technology",
+              "subcategory": "backend_development",
+              "tags": [
+                "api",
+                "rest",
+                "backend",
+                "integration"
+              ],
+              "description": "Design and implementation of application programming interfaces",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "rest",
+                "graphql",
+                "microservices"
+              ],
+              "transferability": {
+                "rest": 0.95,
+                "graphql": 0.8,
+                "microservices": 0.75
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Built simple REST APIs",
+                    "Used HTTP methods",
+                    "JSON responses"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "RESTful best practices",
+                    "API versioning",
+                    "Authentication/Authorization"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "API architecture",
+                    "Rate limiting",
+                    "Documentation (OpenAPI/Swagger)"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "API strategy",
+                    "GraphQL federation",
+                    "Industry standards contributor"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "Backend Developer",
+                "API Developer",
+                "Integration Engineer"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": []
+            },
+            {
+              "id": "api_integration",
+              "canonical_name": "API Integration",
+              "aliases": [
+                "API Integration",
+                "Third-party APIs",
+                "Service Integration"
+              ],
+              "category": "technology",
+              "subcategory": "backend_development",
+              "tags": [
+                "api",
+                "integration",
+                "backend",
+                "services"
+              ],
+              "description": "Integration of external APIs and services into applications",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "api_design",
+                "rest",
+                "microservices"
+              ],
+              "transferability": {
+                "api_design": 0.9,
+                "rest": 0.85,
+                "microservices": 0.75
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Integrated basic APIs",
+                    "Used API keys",
+                    "Handled API responses"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "OAuth integration",
+                    "Webhooks",
+                    "Error handling"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Complex integrations",
+                    "API orchestration",
+                    "Rate limiting strategies"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Integration architecture",
+                    "Enterprise integrations",
+                    "API gateway design"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "Backend Developer",
+                "Integration Engineer",
                 "Full Stack Developer"
               ],
               "industry_demand": "very_high",
@@ -3813,6 +4032,160 @@
               ],
               "industry_demand": "very_high",
               "prerequisites": []
+            },
+            {
+              "id": "devops",
+              "canonical_name": "DevOps",
+              "aliases": [
+                "Dev Ops",
+                "Development Operations",
+                "DevOps Practices"
+              ],
+              "category": "technology",
+              "subcategory": "devops",
+              "tags": [
+                "automation",
+                "deployment",
+                "ci/cd",
+                "infrastructure"
+              ],
+              "description": "Practice combining software development and IT operations for faster delivery",
+              "parent_skills": [],
+              "child_skills": [
+                "docker",
+                "kubernetes",
+                "cicd",
+                "terraform"
+              ],
+              "related_skills": [
+                "cicd",
+                "docker",
+                "kubernetes"
+              ],
+              "transferability": {
+                "cicd": 0.9,
+                "docker": 0.85,
+                "kubernetes": 0.8
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Basic CI/CD pipelines",
+                    "Docker usage",
+                    "Version control"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Automated deployments",
+                    "Infrastructure as code",
+                    "Monitoring setup"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Designed DevOps workflows",
+                    "Multi-cloud deployments",
+                    "Security automation"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "DevOps culture transformation",
+                    "Platform engineering",
+                    "Industry thought leader"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "DevOps Engineer",
+                "Site Reliability Engineer",
+                "Platform Engineer"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": [
+                "linux",
+                "git"
+              ]
+            },
+            {
+              "id": "deployment_pipelines",
+              "canonical_name": "Deployment Pipelines",
+              "aliases": [
+                "CI/CD Pipelines",
+                "Build Pipelines",
+                "Release Pipelines"
+              ],
+              "category": "technology",
+              "subcategory": "devops",
+              "tags": [
+                "cicd",
+                "automation",
+                "deployment",
+                "devops"
+              ],
+              "description": "Automated processes for building, testing, and deploying software",
+              "parent_skills": [
+                "devops"
+              ],
+              "child_skills": [],
+              "related_skills": [
+                "cicd",
+                "docker",
+                "kubernetes"
+              ],
+              "transferability": {
+                "cicd": 0.95,
+                "devops": 0.9,
+                "docker": 0.75
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Configured basic pipelines",
+                    "Used CI/CD tools",
+                    "Automated tests"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Multi-stage pipelines",
+                    "Environment management",
+                    "Deployment strategies"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Complex pipeline architecture",
+                    "Multi-cloud deployments",
+                    "GitOps"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Pipeline platform design",
+                    "DevOps transformation",
+                    "Industry best practices"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "DevOps Engineer",
+                "Release Engineer",
+                "SRE"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": [
+                "git"
+              ]
             }
           ]
         },
@@ -4983,6 +5356,79 @@
               ],
               "industry_demand": "high",
               "prerequisites": []
+            },
+            {
+              "id": "fullstack_development",
+              "canonical_name": "Full-Stack Development",
+              "aliases": [
+                "Full Stack",
+                "Fullstack",
+                "Full-Stack Dev"
+              ],
+              "category": "technology",
+              "subcategory": "engineering",
+              "tags": [
+                "frontend",
+                "backend",
+                "fullstack",
+                "web"
+              ],
+              "description": "Development across both frontend and backend technologies",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "frontend",
+                "backend",
+                "javascript"
+              ],
+              "transferability": {
+                "frontend": 0.9,
+                "backend": 0.9,
+                "javascript": 0.85
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Built simple full-stack apps",
+                    "Frontend + backend basics",
+                    "Database integration"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Production full-stack apps",
+                    "API integration",
+                    "Deployment"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Full-stack architecture",
+                    "DevOps integration",
+                    "Performance optimization"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Platform engineering",
+                    "Technology leadership",
+                    "Full-stack standards"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "Full Stack Developer",
+                "Software Engineer",
+                "Web Developer"
+              ],
+              "industry_demand": "very_high",
+              "prerequisites": [
+                "javascript"
+              ]
             }
           ]
         },
@@ -5731,6 +6177,75 @@
               "industry_demand": "very_high",
               "prerequisites": [],
               "last_updated": "2025-12-12"
+            },
+            {
+              "id": "platform_architecture",
+              "canonical_name": "Platform Architecture",
+              "aliases": [
+                "Platform Design",
+                "Platform Engineering"
+              ],
+              "category": "technology",
+              "subcategory": "software_architecture",
+              "tags": [
+                "architecture",
+                "platform",
+                "scalability",
+                "infrastructure"
+              ],
+              "description": "Design and implementation of scalable technology platforms",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "system_architecture",
+                "microservices",
+                "cloud"
+              ],
+              "transferability": {
+                "system_architecture": 0.95,
+                "microservices": 0.85,
+                "cloud_computing": 0.8
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Understood platform concepts",
+                    "Worked on platform components"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Designed platform modules",
+                    "Integrated multiple services",
+                    "Scalability patterns"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Architected complete platforms",
+                    "Multi-tenant systems",
+                    "Platform evolution"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Industry-leading platforms",
+                    "Platform standards",
+                    "Enterprise architecture"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "Platform Architect",
+                "Solutions Architect",
+                "Technical Architect"
+              ],
+              "industry_demand": "high",
+              "prerequisites": []
             }
           ]
         },
@@ -6032,6 +6547,82 @@
                 "python"
               ],
               "last_updated": "2025-12-13"
+            },
+            {
+              "id": "computer_vision",
+              "canonical_name": "Computer Vision",
+              "aliases": [
+                "CV",
+                "Image Recognition",
+                "Visual AI"
+              ],
+              "category": "technology",
+              "subcategory": "ai_ml",
+              "tags": [
+                "ai",
+                "ml",
+                "vision",
+                "image-processing"
+              ],
+              "description": "Field of AI that enables computers to interpret and understand visual information",
+              "parent_skills": [
+                "machine_learning"
+              ],
+              "child_skills": [],
+              "related_skills": [
+                "machine_learning",
+                "deep_learning",
+                "python"
+              ],
+              "transferability": {
+                "machine_learning": 0.9,
+                "deep_learning": 0.85,
+                "python": 0.7
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Used pre-trained models",
+                    "Basic image processing",
+                    "OpenCV basics"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Trained custom models",
+                    "Object detection",
+                    "Image segmentation"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Advanced architectures (CNNs)",
+                    "Real-time processing",
+                    "Model optimization"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Research contributions",
+                    "Novel architectures",
+                    "Industry applications"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "Computer Vision Engineer",
+                "ML Engineer",
+                "AI Researcher"
+              ],
+              "industry_demand": "high",
+              "prerequisites": [
+                "machine_learning",
+                "python"
+              ]
             }
           ]
         },
@@ -6103,6 +6694,81 @@
                 "Cross-Platform Developer"
               ],
               "industry_demand": "high",
+              "prerequisites": []
+            },
+            {
+              "id": "mobile_development",
+              "canonical_name": "Mobile Development",
+              "aliases": [
+                "Mobile Dev",
+                "App Development",
+                "Mobile Apps"
+              ],
+              "category": "technology",
+              "subcategory": "mobile_development",
+              "tags": [
+                "mobile",
+                "ios",
+                "android",
+                "apps"
+              ],
+              "description": "Development of applications for mobile devices",
+              "parent_skills": [],
+              "child_skills": [
+                "react_native",
+                "flutter",
+                "swift"
+              ],
+              "related_skills": [
+                "react_native",
+                "flutter",
+                "swift"
+              ],
+              "transferability": {
+                "react_native": 0.9,
+                "flutter": 0.85,
+                "swift": 0.7
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Built simple mobile apps",
+                    "Used mobile frameworks",
+                    "Published to app stores"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Cross-platform development",
+                    "Native integrations",
+                    "Performance optimization"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Complex app architecture",
+                    "Custom native modules",
+                    "CI/CD for mobile"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Mobile platform expertise",
+                    "Framework contributions",
+                    "Mobile architecture leadership"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "Mobile Developer",
+                "iOS Developer",
+                "Android Developer"
+              ],
+              "industry_demand": "very_high",
               "prerequisites": []
             }
           ]
@@ -6416,6 +7082,82 @@
               "industry_demand": "high",
               "prerequisites": [
                 "php"
+              ]
+            },
+            {
+              "id": "aspnet_core",
+              "canonical_name": "ASP.NET Core",
+              "aliases": [
+                "ASP.NET",
+                "ASPNET Core",
+                ".NET Core",
+                "ASP NET Core"
+              ],
+              "category": "technology",
+              "subcategory": "backend_frameworks",
+              "tags": [
+                "backend",
+                "web",
+                "api",
+                "microsoft"
+              ],
+              "description": "Cross-platform framework for building web applications and APIs",
+              "parent_skills": [
+                "csharp"
+              ],
+              "child_skills": [],
+              "related_skills": [
+                "csharp",
+                "dotnet",
+                "entityframework"
+              ],
+              "transferability": {
+                "nodejs": 0.65,
+                "spring": 0.6,
+                "django": 0.55
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Built basic MVC apps",
+                    "Created simple APIs",
+                    "Used Entity Framework"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Built production APIs",
+                    "Middleware development",
+                    "Authentication/Authorization"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Microservices architecture",
+                    "Performance optimization",
+                    "Custom middleware"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Framework contributions",
+                    ".NET conference speaker",
+                    "Architecture patterns"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                ".NET Developer",
+                "Backend Developer",
+                "Full Stack Developer"
+              ],
+              "industry_demand": "high",
+              "prerequisites": [
+                "csharp"
               ]
             }
           ]
@@ -6731,6 +7473,76 @@
               "industry_demand": "high",
               "prerequisites": [],
               "last_updated": "2025-12-12"
+            },
+            {
+              "id": "digital_transformation",
+              "canonical_name": "Digital Transformation",
+              "aliases": [
+                "Digital Strategy",
+                "Business Transformation",
+                "Digitalization"
+              ],
+              "category": "business",
+              "subcategory": "strategy",
+              "tags": [
+                "strategy",
+                "transformation",
+                "innovation",
+                "change-management"
+              ],
+              "description": "Integration of digital technology into all areas of business",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "business_strategy",
+                "product_management",
+                "innovation"
+              ],
+              "transferability": {
+                "business_strategy": 0.85,
+                "product_management": 0.75,
+                "change_management": 0.7
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Participated in digital projects",
+                    "Understood digital trends"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Led digital initiatives",
+                    "Technology adoption",
+                    "Process digitization"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Enterprise transformation",
+                    "Digital strategy",
+                    "Change leadership"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Industry transformation",
+                    "Digital thought leader",
+                    "Board-level strategy"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "Chief Digital Officer",
+                "Transformation Lead",
+                "Strategy Consultant"
+              ],
+              "industry_demand": "high",
+              "prerequisites": []
             }
           ]
         },
@@ -6803,6 +7615,148 @@
                 "Financial Analyst",
                 "FP&A Manager",
                 "Investment Analyst",
+                "CFO"
+              ],
+              "industry_demand": "high",
+              "prerequisites": []
+            },
+            {
+              "id": "fundraising",
+              "canonical_name": "Fundraising",
+              "aliases": [
+                "Capital Raising",
+                "Investor Relations",
+                "Venture Capital"
+              ],
+              "category": "business",
+              "subcategory": "finance",
+              "tags": [
+                "finance",
+                "startup",
+                "investment",
+                "capital"
+              ],
+              "description": "Securing financial resources from investors or other sources",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "startup_experience",
+                "business_strategy",
+                "financial_management"
+              ],
+              "transferability": {
+                "startup_experience": 0.8,
+                "business_strategy": 0.7,
+                "financial_management": 0.65
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Assisted in fundraising",
+                    "Pitch deck creation",
+                    "Investor research"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Led funding rounds",
+                    "Investor pitches",
+                    "Term sheet negotiation"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Multiple successful raises",
+                    "Investor network",
+                    "Fundraising strategy"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "$10M+ raises",
+                    "VC relationships",
+                    "Advisory to startups"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "CEO",
+                "CFO",
+                "Startup Founder"
+              ],
+              "industry_demand": "medium",
+              "prerequisites": []
+            },
+            {
+              "id": "pl_management",
+              "canonical_name": "P&L Management",
+              "aliases": [
+                "Profit and Loss",
+                "P&L",
+                "Financial Management"
+              ],
+              "category": "business",
+              "subcategory": "finance",
+              "tags": [
+                "finance",
+                "accounting",
+                "management",
+                "budget"
+              ],
+              "description": "Management of profit and loss statements and financial performance",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "financial_management",
+                "budgeting",
+                "business_strategy"
+              ],
+              "transferability": {
+                "financial_management": 0.9,
+                "budgeting": 0.85,
+                "business_strategy": 0.7
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Understood P&L statements",
+                    "Budget tracking",
+                    "Cost analysis"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Managed department P&L",
+                    "Forecasting",
+                    "Variance analysis"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Business unit P&L",
+                    "Strategic planning",
+                    "Financial modeling"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Enterprise P&L responsibility",
+                    "Board reporting",
+                    "CFO-level expertise"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "General Manager",
+                "Business Unit Head",
                 "CFO"
               ],
               "industry_demand": "high",
@@ -7745,6 +8699,77 @@
               "industry_demand": "very_high",
               "prerequisites": [],
               "last_updated": "2025-12-12"
+            },
+            {
+              "id": "technical_due_diligence",
+              "canonical_name": "Technical Due Diligence",
+              "aliases": [
+                "Tech DD",
+                "Technology Assessment",
+                "Technical Review"
+              ],
+              "category": "business",
+              "subcategory": "management",
+              "tags": [
+                "assessment",
+                "risk",
+                "technology",
+                "evaluation"
+              ],
+              "description": "Technical evaluation of companies for investment or acquisition",
+              "parent_skills": [],
+              "child_skills": [],
+              "related_skills": [
+                "system_architecture",
+                "risk_management",
+                "technology_strategy"
+              ],
+              "transferability": {
+                "system_architecture": 0.75,
+                "risk_management": 0.7,
+                "technology_consulting": 0.8
+              },
+              "proficiency_levels": {
+                "beginner": {
+                  "markers": [
+                    "Participated in DD",
+                    "Technology assessments",
+                    "Documentation review"
+                  ],
+                  "typical_experience": "0-1 years"
+                },
+                "intermediate": {
+                  "markers": [
+                    "Led DD projects",
+                    "Risk identification",
+                    "Technical recommendations"
+                  ],
+                  "typical_experience": "1-3 years"
+                },
+                "advanced": {
+                  "markers": [
+                    "Complex DD assessments",
+                    "M&A advisory",
+                    "Technology valuation"
+                  ],
+                  "typical_experience": "3-5 years"
+                },
+                "expert": {
+                  "markers": [
+                    "Enterprise DD expertise",
+                    "Investment committee",
+                    "Industry advisor"
+                  ],
+                  "typical_experience": "5+ years"
+                }
+              },
+              "typical_roles": [
+                "CTO",
+                "Technical Consultant",
+                "Investment Analyst"
+              ],
+              "industry_demand": "medium",
+              "prerequisites": []
             }
           ]
         },
