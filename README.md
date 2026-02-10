@@ -39,7 +39,7 @@ At **Tanova**, we use AI to evaluate candidates across 7 dimensions beyond keywo
 **Direct usage (recommended for v1.0):**
 ```bash
 # Download taxonomy file
-curl -O https://raw.githubusercontent.com/tanova/skills-taxonomy/main/taxonomy.json
+curl -O https://raw.githubusercontent.com/tanova-ai/skills-taxonomy/main/taxonomy.json
 
 # Or clone the repository
 git clone https://github.com/tanova-ai/skills-taxonomy.git
@@ -500,10 +500,13 @@ This project uses the Open Skills Taxonomy by Tanova
 
 **Created and maintained by [Tanova.ai](https://tanova.ai)**
 
+After validating this taxonomy with **1,000+ candidate evaluations during a 60-day stealth beta** (100% organic growth), we're open-sourcing it to help the HR tech community build better tools.
+
 Tanova is the only platform where candidates see their fit score **before** applying—helping companies find hidden gem candidates that traditional ATS systems miss.
 
 - **Website:** [tanova.ai](https://tanova.ai)
 - **Try Free Tool:** [tanova.ai/check-cv](https://tanova.ai/check-cv)
+- **7D Framework:** [tanova.ai/7d-framework](https://tanova.ai/7d-framework)
 - **API Access:** [tanova.ai/integrations](https://tanova.ai/integrations)
 - **Contact:** hello@tanova.ai
 
